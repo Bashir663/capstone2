@@ -1,0 +1,217 @@
+body{
+    margin: 0px;
+}
+
+h2{
+    text-align: left;
+    font-size: 3rem;
+}
+
+.nametitle h2{
+    text-align: center;
+}
+
+#hero{
+    background-image: url(./images/spacex.jpg);
+    background-position: center;
+    background-size:cover;
+    min-height: fit-content;
+}
+
+h1{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+        font-size: 5vh;
+}
+
+.container h1{
+    grid-column: span 2;
+}
+
+
+#resume{
+    background-image: url(./images/clouds2.png);
+    background-position: center;
+    background-size:cover;
+    min-height: fit-content;
+
+}
+
+#between1{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 25%, rgba(0,101,165,1) 85%);
+    height: 3rem;
+}
+#between2{
+    background: rgb(209,205,196);
+    background: linear-gradient(180deg, rgba(204,201,193,1) 0%, rgba(162,207,249,1) 100%);
+    height: 3rem;
+}
+
+
+#between4{
+    background: rgb(75,48,39);
+background: linear-gradient(180deg, rgba(75,48,39,1) 25%, rgba(26,59,102,1) 75%);
+height:3rem;
+}
+
+#projects{
+    background-image: url(./images/Friendly\ Prairie.jpeg);
+    background-position: center;
+    background-size:cover;
+    min-height: fit-content;
+
+}
+
+
+
+#about-me{
+    background-image: url(./images/DIRT\ TEXTURE.png);
+    background-position: center;
+    min-height: fit-content;
+
+
+}
+
+#contact{
+    background-image: url(./images/UNDER\ DA\ SEAAA.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 150vh;
+
+}
+
+.doubletainer{
+    display:flex;
+
+    justify-content: center;
+    height: 70vh;
+    
+}
+
+.spacetainer{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    grid-template-rows: 30vh 1fr 10px;     
+    height: fit-content;
+
+}
+
+.container{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+ 
+    text-align: center;
+    grid-template-rows: 40% 20% 20% 20%;
+    grid-template-columns: 50% 50%;
+    min-height: fit-content;
+
+}
+
+.blackhr{
+    border-color: black;
+}
+
+
+.nametitle{
+    
+    color: white;
+    text-align: center ;
+}
+
+p{
+    text-align: left;
+    font-size: 2rem;
+}
+  
+
+.cloud-text{
+    color: #1A71AB;
+}
+
+.projects{
+    color:#47502A;
+}
+
+.ground-text{
+    color:aqua;
+    grid-column: span 2;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+a{
+    color:aqua; 
+}
+
+.dirt-text{
+    color: #B88986;
+}
+
+#about-me .doubletainer .container{
+    grid-template-rows: 25% 250px 250px 0px;
+    gap: 10%;
+    min-height: fit-content;
+
+}
+#about-me .doubletainer{
+    height: 100rem;
+    min-height: fit-content;
+
+}
+
+.container img{
+    height: 250px; 
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.watertainer{
+   
+
+}
+
+.contact{
+    grid-column: span 3;
+
+}
+.water-text{
+    color: white;
+    align-self: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+#me{
+    height: 500px;
+    border-radius: 30%;
+    border-width: 1rem;
+    border-color: #5CE1E6;
+    grid-row: span 2;
+}
+
+
+@media (max-width: 1100px){
+    .container > *{
+        grid-column: span 2;
+    }
+  
+   #me{
+    order: 1;
+   }
+   .water-text.me{
+    order:2;
+   }
+   
+   #contact{
+height: 150rem;
+   }
+
+}
